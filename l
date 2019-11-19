@@ -1,3 +1,8 @@
- #include 
+#include <iostream>
+#include <time.h>
+#include <math.h>
+#include <stdlib.h>
  
-hbnpiu
+using namespace std;
+int main()
+{
