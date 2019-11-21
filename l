@@ -9,6 +9,8 @@ int main()
 int value, outcome = 0, k = 1, U = 0, JF = 0, P = 0;
 char choice, answer = -1;   
 int C; // class
+string pirates;
+string ninjas;
 
 /*
 This is the introduction of our game
@@ -34,8 +36,8 @@ cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
  
     while(choice < '1' || choice > '4') //validates
     {
-      cout << "Invalid choice! Try again: ";
-      cin >>choice;
+     cout << "Invalid choice! Try again: ";
+     cin >>choice;
     }
 
    
@@ -72,9 +74,9 @@ cout << "do you want to bring anything on your first day? ('Y' or 'N'): ";
     cin >> answer;
   }
 
-if (answer == 'Y')
+   if (answer == 'Y')
 {
-while (k != 1) 
+   while (k != 1) 
 {
 cout<<"1.one umbrella"<<endl;
 cout<<"2.a jacket and a folder"<<endl;
@@ -84,21 +86,21 @@ cout << "5. All done."<< endl;
 cin >> choice;
 }
 }
-else
-  while(choice < '1' || choice > '5') //validates
+   else
+   while(choice < '1' || choice > '5') //validates
     {
-      cout << "Invalid choice! Try again: ";
-      cin >> choice;
+ cout << "Invalid choice! Try again: ";
+ cin >> choice;
     }
 switch(choice)
 {
-  case '1': cout<< "One umbrella nice!"; 
-    U = 1;
-    break;
-case '2': cout<< " A jacket and a folder, this should come in handy.";
+   case '1': cout<< "One umbrella nice!"; 
+U = 1;
+break;
+   case '2': cout<< " A jacket and a folder, this should come in handy.";
       JF = 1;
       break;
-  case '3': cout<< " A pencil nice!.";
+   case '3': cout<< " A pencil nice!.";
       P = 1;
       break;
   case '4': cout << "All of the above? You overachiever.";
@@ -107,20 +109,20 @@ case '2': cout<< " A jacket and a folder, this should come in handy.";
       P = 1;
       k=1;
       
-  case '5':
+case '5':
 cout << "Nothing? really? okay then." <<endl;
 outcome--;
-  k = 1;
+k = 1;
   
 }
 
 
 
-if ( value < 0)
+   if ( value < 0)
 cout << "You wake up in a cold sweat and feel like today is going to be a bad day." <<endl;
-else if ( value > 0)
+   else if ( value > 0)
 cout << "You wake up feeling energized ready for this amazing day." << endl;
-else
+   else
 cout << "You wake up ready for a boring first day." << endl;
 
         cout<<"You walk out of the resident halls for your first day. The sky is cloudy and the wind is very strong."; 
@@ -134,16 +136,16 @@ cout<<endl;
 cout<<"1.Oh well I can find another map somewhere"<<endl;
 cout<<"2.Run after it!"<<endl;
 cin>>choice;
-if(choice!='1'&& choice!='2')
+   if(choice!='1'&& choice!='2')
 {
 cout<<"enter the numbers 1 or 2 plz !! "<<endl;
 }
-else if(choice=='1')
+   else if(choice=='1')
 {
 cout<<"Good idea"<<endl;
 outcome += 1;
 }
-if (choice =='2') 
+   if (choice =='2') 
 {
 cout<<"The wind was too strong it blew your map all the way to the ocean    :(   ";
 {
@@ -194,13 +196,15 @@ cout<<"You fill out her card and then leave her with the answers. She thanks you
         cout<<"You scramble to your desk. The TA, Turtle Shellson, begins the lab.";
         cout<<"Nothing major happens but he does say to bring out a piece of paper and a pencil.";
 
-if ( P == 0)
+   if ( P == 0)
 {
+
+
 int prepare(int & outcome);
 }
-else 
-    cout << "congrats you came prepared!";
-    outcome++;
+   else 
+cout << "congrats you came prepared!";
+outcome++;
 }
 
 return 0;
@@ -211,7 +215,6 @@ return 0;
 int prepare(int & outcome)
 { 
 cout << "Should have came preparded. :(" << endl;
-
 return outcome-1;
 }
 
