@@ -217,9 +217,9 @@ return 0;
 }
 
 
-cout<<"Congrats!! You made it thru the day without a single tear shed. You begin walking out of your last class so you can go home”<<endl;
+cout<<"Congrats!! You made it thru the day without a single tear shed. You begin walking out of your last class so you can go home"<<endl;
 cout<<"Achievement unlocked: First day of college \(.__.)>"<<endl;
-cout<<"Wait a minute…. Something is off…”<<endl;
+cout<<"Wait a minute…. Something is off…"<<endl;
 	cout<<”the ground starts to become shaky and everything is blurry… ehverbeurbqubgruGWgruegrEGRunegm BOOM"<<endl;
 cout<<endl;
 cout<<endl;
