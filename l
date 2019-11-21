@@ -203,21 +203,22 @@ cout<<"You fill out her card and then leave her with the answers. She thanks you
 int prepare(int & outcome);
 }
    else 
-cout << "congrats you came prepared!";
-outcome++;
-}
+   {
+	cout << "congrats you came prepared!" << endl;
+	outcome++;
+	}
 do
 {
-cout<<"how was ur first day?";
+cout<<"how was ur first day? ";
 cin>>choice;
 }
-while (choice >10&&choice<0);
+while (choice >10 && choice<0);
 cout<<"Every is a new day. Dream for your goals";
 return 0;
 }
 
 
-cout<<"Congrats!! You made it thru the day without a single tear shed. You begin walking out of your last class so you can go home"<<endl;
+cout<<"Congrats!! You made it thru the day without a single tear shed. You begin walking out of your last class so you can go home" <<endl;
 cout<<"Achievement unlocked: First day of college \(.__.)>"<<endl;
 cout<<"Wait a minute…. Something is off…"<<endl;
 	cout<<”the ground starts to become shaky and everything is blurry… ehverbeurbqubgruGWgruegrEGRunegm BOOM"<<endl;
@@ -228,8 +229,6 @@ cout<<":)"<<endl;
 
 return 0;
 }
-
-
 
 int prepare(int & outcome)
 { 
