@@ -224,7 +224,7 @@ cout<<"Wait a minute…. Something is off…”<<endl;
 cout<<endl;
 cout<<endl;
 cout<<"BEEP BEEP BEEP BEEP BEEP…. Your eyes open and you go to pick your phone up to see the time displays 9:51AM. You rub your eyes and realize that you dreamed of you going through your whole first day of school!!!! 	(iT WaS aLl a DrrRRREeeeaaaAAmmMMMM)   GET UP AND GET READY YOUR GOING TO BE LATE TO YOUR FIRST CLASS BUDDY!"<<endl;
-cout<":)"<<endl; 
+cout<<":)"<<endl; 
 
 return 0;
 }
