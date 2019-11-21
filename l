@@ -206,6 +206,25 @@ int prepare(int & outcome);
 cout << "congrats you came prepared!";
 outcome++;
 }
+do
+{
+cout<<"how was ur first day?";
+cin>>choice;
+}
+while (choice >10&&choice<0);
+cout<<"Every is a new day. Dream for your goals";
+return 0;
+}
+
+
+cout<<"Congrats!! You made it thru the day without a single tear shed. You begin walking out of your last class so you can go home”<<endl;
+cout<<"Achievement unlocked: First day of college \(.__.)>"<<endl;
+cout<<"Wait a minute…. Something is off…”<<endl;
+	cout<<”the ground starts to become shaky and everything is blurry… ehverbeurbqubgruGWgruegrEGRunegm BOOM"<<endl;
+cout<<endl;
+cout<<endl;
+cout<<"BEEP BEEP BEEP BEEP BEEP…. Your eyes open and you go to pick your phone up to see the time displays 9:51AM. You rub your eyes and realize that you dreamed of you going through your whole first day of school!!!! 	(iT WaS aLl a DrrRRREeeeaaaAAmmMMMM)   GET UP AND GET READY YOUR GOING TO BE LATE TO YOUR FIRST CLASS BUDDY!"<<endl;
+cout<":)"<<endl; 
 
 return 0;
 }
