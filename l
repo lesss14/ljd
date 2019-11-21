@@ -30,11 +30,10 @@ cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
     cout << "1. Slug __//  \n";
     cout << "2. Owl (0v0) \n";
     cout << "3. Seagull \n";
-    cout << "4. Exit\n\n";
     cout << "What is your choice? ";// Here they make a choice
     cin >>choice;
  
-    while(choice < '1' || choice > '4') //validates
+    while(choice < '1' || choice > '3') //validates
     {
      cout << "Invalid choice! Try again: ";
      cin >>choice;
