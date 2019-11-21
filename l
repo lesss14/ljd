@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 int value, outcome = 0, k = 1, U = 0, JF = 0, P = 0;
-char choice, answer = -1;   
+char choice, answer;   
 int C; // class
 string pirates;
 string ninjas;
@@ -66,7 +66,8 @@ cout<<"Choose what you would like to bring to your first day of class"<<endl;
 cout<<" "<<endl;
 
 //loop // item selection
-cout << "do you want to bring anything on your first day? (Y or N): "; 
+cout << "do you want to bring anything on your first day? ('Y' or 'N'): "; 
+cin >> answer;
   while ( answer != 'Y' || answer != 'N')
   {
     cout << "Error, please enter 'Y' or 'N' "<< endl;
@@ -81,8 +82,8 @@ cout << "do you want to bring anything on your first day? (Y or N): ";
 cout<<"1.one umbrella"<<endl;
 cout<<"2.a jacket and a folder"<<endl;
 cout <<"3.a pencil" << endl;
-cout << "4. All of the above." << endl;
-cout << "5. All done."<< endl;
+cout <<"4. All of the above." << endl;
+cout <<"5. All done."<< endl;
 cin >> choice;
 }
 }
@@ -97,20 +98,20 @@ switch(choice)
    case '1': cout<< "One umbrella nice!"; 
 U = 1;
 break;
-   case '2': cout<< " A jacket and a folder, this should come in handy.";
+   case '2': cout<< "A jacket and a folder, this should come in handy.";
       JF = 1;
       break;
-   case '3': cout<< " A pencil nice!.";
+   case '3': cout<< "A pencil nice!.";
       P = 1;
       break;
-  case '4': cout << "All of the above? You overachiever.";
+  case '4': cout <<"All of the above? You overachiever.";
       U = 1;
       JF = 1;
       P = 1;
       k=1;
       
 case '5':
-cout << "Nothing? really? okay then." <<endl;
+cout <<"Nothing? really? okay then." <<endl;
 outcome--;
 k = 1;
   
