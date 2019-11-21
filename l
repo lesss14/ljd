@@ -66,7 +66,7 @@ cout<<"Choose what you would like to bring to your first day of class"<<endl;
 cout<<" "<<endl;
 
 //loop // item selection
-cout << "do you want to bring anything on your first day? ('Y' or 'N'): "; 
+cout << "do you want to bring anything on your first day? (Y or N): "; 
   while ( answer != 'Y' || answer != 'N')
   {
     cout << "Error, please enter 'Y' or 'N' "<< endl;
