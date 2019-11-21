@@ -74,7 +74,8 @@ cout << "do you want to bring anything on your first day? ('Y' or 'N'): ";
     cin >> answer;
   }
 
-   if (answer == 'Y')
+   if (answer == 'Y') 
+   {
 {
    while (k != 1) 
 {
