@@ -8,7 +8,7 @@ int prepare(int );
 int main()
 {
 int outcome = 0, k = 1, p;
-char choice, answer;   
+char choice, answer, selection;   
 int C; // class
 string Niop, name;
 
@@ -25,7 +25,41 @@ cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
 cout<<"Choose your character!!"<<endl; // character selection
 cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
 
-   
+//menu 
+
+cout<< "1. start"<<endl;
+cout<<"2. view high scores "<<endl;
+cout<< "3. exit"<<endl;
+
+cin>> selection;
+cout<<endl;
+
+//validates
+     while(selection < '1' || selection > '3')  
+     	{
+	cout << "Invalid choice! Try again: ";
+     	cin >>selection;
+   	 }
+	cout<<endl;
+	
+
+    switch (selection) 
+    {
+      case '1': cout<< "";    
+            break;
+      case '2': cout<< " ";
+            break;
+      case '3':cout<<" Adios!"; 
+            break;
+      //default:
+    }
+   choice = 0;
+
+	cout << endl;
+	
+	
+	
+	
     cout << endl;
     cout << "1. Slug __//  \n";
     cout << "2. Owl (0v0) \n";
