@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string>
 using namespace std;
+int prepare(int );
 int main()
 {
 int value, outcome = 0, k = 1, U = 0, JF = 0, P = 0;
@@ -24,7 +25,7 @@ cout<<endl;
 cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
 cout<<"Choose your character!!"<<endl; // character selection
 cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
-{
+
    
     cout << endl;
     cout << "1. Slug __//  \n";
@@ -54,7 +55,7 @@ cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
             break;
       //default:
     }
-   } 
+   choice = 0;
 
    cout << endl;
    
@@ -68,14 +69,7 @@ cout<<" "<<endl;
 //loop // item selection
 cout << "do you want to bring anything on your first day? ('Y' or 'N'): "; 
 cin >> answer;
-  while ( answer != 'Y' || answer != 'N')
-  {
-    cout << "Error, please enter 'Y' or 'N' "<< endl;
-    cin >> answer;
-  }
-
    if (answer == 'Y') 
-   {
 {
    while (k != 1) 
 {
@@ -85,9 +79,6 @@ cout <<"3.a pencil" << endl;
 cout <<"4. All of the above." << endl;
 cout <<"5. All done."<< endl;
 cin >> choice;
-}
-}
-   else
    while(choice < '1' || choice > '5') //validates
     {
  cout << "Invalid choice! Try again: ";
@@ -114,7 +105,8 @@ case '5':
 cout <<"Nothing? really? okay then." <<endl;
 outcome--;
 k = 1;
-  
+}
+}
 }
 
 
@@ -126,10 +118,10 @@ cout << "You wake up feeling energized ready for this amazing day." << endl;
    else
 cout << "You wake up ready for a boring first day." << endl;
 
-        cout<<"You walk out of the resident halls for your first day. The sky is cloudy and the wind is very strong."; 
-        cout<<"As your walking you pull the school map out of your pocket that was given to you on Islander Launch day.";
-        cout<<"Looking at the map you are looking for the CI building. You can't seem to find it.";
-        cout<<"The wind gets stronger and all the sudden the wind takes the map right out of your hand!!!"<<endl;
+cout<<"You walk out of the resident halls for your first day. The sky is cloudy and the wind is very strong."; 
+cout<<"As your walking you pull the school map out of your pocket that was given to you on Islander Launch day.";
+cout<<"Looking at the map you are looking for the CI building. You can't seem to find it.";
+cout<<"The wind gets stronger and all the sudden the wind takes the map right out of your hand!!!"<<endl;
 cout<<"What do you do?"<<endl;
 cout<<endl;
 cout<<endl;
@@ -148,7 +140,8 @@ outcome += 1;
 }
    if (choice =='2') 
 {
-cout<<"The wind was too strong it blew your map all the way to the ocean    :(   ";
+cout<<"The wind was too strong it blew your map all the way to the ocean  :(  ";
+}
 {
 outcome -= 1;
 }
@@ -160,7 +153,7 @@ outcome -= 1;
     cout<<"Everyone starts to get up and walk into the class."; 
     cout<<"You follow and have to decide where to sit."<<endl;
 
-cout<<"Where will you si2t?"<<endl;
+cout<<"Where will you sit?"<<endl;
 
 
 
@@ -176,9 +169,9 @@ cout<<"Then you turn around and see kids fill the room and you begin to feel ner
 cout<<"But then Professor Rita the Owl walks in and she greets everyone in a very welcoming way."; 
 cout<<"She then begins to introduce herself and inform the class of her likes, hobbies.";
 cout<<"Dr Owl then goes over her sylabus and you feel a wave of excitement fufill you."; 
-cout <<"The class ends quickly and she asks you to fill out a flashcard to let her get to know you a little more.";
-cout<<"(Thank goodness she didnt ask for the class to get up and do ice breakers)"; 
-  cout<<"There are little questions she wants you to answer…."<<endl;
+cout <<"The class ends quickly and she asks you to fill out a flashcard to let her get to know you a little more";
+cout<<"(Thank goodness she didnt ask for the class to get up and do ice breakers). "; 
+cout<<"There are little questions she wants you to answer…."<<endl;
 cout<<endl;
 cout<<endl;
 
@@ -199,9 +192,7 @@ cout<<"You fill out her card and then leave her with the answers. She thanks you
 
    if ( P == 0)
 {
-
-
-int prepare(int & outcome);
+prepare(outcome);
 }
    else 
    {
@@ -214,24 +205,26 @@ cout<<"how was ur first day? ";
 cin>>choice;
 }
 while (choice >10 && choice<0);
-cout<<"Every is a new day. Dream for your goals";
-return 0;
+{
+cout<<"Every is a new day. Dream for your goals" << endl;
 }
 
 
-cout<<"Congrats!! You made it thru the day without a single tear shed. You begin walking out of your last class so you can go home" <<endl;
-cout<<"Achievement unlocked: First day of college \(.__.)>"<<endl;
+
+cout<<"Congrats!! You made it thru the day without a single tear shed. You begin walking out of your last class so you can go home." <<endl;
+cout<<"Achievement unlocked: First day of college. (>.__.)>"<<endl;
 cout<<"Wait a minute…. Something is off…"<<endl;
-	cout<<”the ground starts to become shaky and everything is blurry… ehverbeurbqubgruGWgruegrEGRunegm BOOM"<<endl;
+cout<<"the ground starts to become shaky and everything is blurry… ehverbeurbqubgruGWgruegrEGRunegm BOOM"<<endl;
 cout<<endl;
 cout<<endl;
-cout<<"BEEP BEEP BEEP BEEP BEEP…. Your eyes open and you go to pick your phone up to see the time displays 9:51AM. You rub your eyes and realize that you dreamed of you going through your whole first day of school!!!! 	(iT WaS aLl a DrrRRREeeeaaaAAmmMMMM)   GET UP AND GET READY YOUR GOING TO BE LATE TO YOUR FIRST CLASS BUDDY!"<<endl;
+cout<<"BEEP BEEP BEEP BEEP BEEP…. Your eyes open and you go to pick your phone up to see the time displays 9:51AM. You rub your eyes and realize that you dreamed of you going through your whole first day of school!!!!" << endl; 	
+cout << "(iT WaS aLl a DrrRRREeeeaaaAAmmMMMM).  GET UP AND GET READY YOU'RE GOING TO BE LATE TO YOUR FIRST CLASS BUDDY!"<<endl;
 cout<<":)"<<endl; 
-
+ 
 return 0;
 }
 
-int prepare(int & outcome)
+int prepare(int outcome)
 { 
 cout << "Should have came preparded. :(" << endl;
 return outcome-1;
